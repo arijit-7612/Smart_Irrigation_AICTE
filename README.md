@@ -1,60 +1,81 @@
-🌾 Smart Irrigation System – Streamlit Web App
-This project is an AI-powered irrigation management system built with Streamlit.
-It predicts the ON/OFF status of 20 smart sprinklers based on real-time scaled sensor inputs (0 to 1), helping farmers optimize water usage efficiently.
+# 🌾 Smart Irrigation System – AI-Powered Sprinkler Control
 
-🚀 Features
-🖥️ Interactive Web UI using Streamlit
+**💧 Save Water. Automate Irrigation. Boost Crop Health.**
+A **machine learning-based irrigation system** with a **Streamlit-powered web app** to predict **ON/OFF status of 20 sprinklers** using **real-time sensor data**.
 
-🔢 20 Sensor Inputs via sliders
+---
 
-💧 Multi-Sprinkler Prediction (ON/OFF for each parcel)
+## ✨ Features
 
-📊 Machine Learning Model trained with RandomForestClassifier
+✅ **20 Sensor Inputs** via interactive sliders (0 to 1)
+✅ **Instant Sprinkler Prediction** (ON/OFF)
+✅ **Multi-label Machine Learning** with `RandomForestClassifier`
+✅ **Beautiful & Responsive Streamlit UI**
+✅ **Supports Live Deployment on Streamlit Cloud**
 
-⚡ Instant Prediction without retraining the model
+---
 
-🛠️ Tech Stack
-Python 3
+## 🖥️ Demo Preview
 
-Streamlit
+**🎯 Input Sensors → 💡 Instant Sprinkler Decision**
 
-NumPy
+```
+Sensor_0: 0.7  →  Sprinkler 0: ON
+Sensor_1: 0.2  →  Sprinkler 1: OFF
+...
+```
 
-Scikit-learn
 
-Joblib
 
-📦 Project Structure
-bash
-Copy
-Edit
-Smart_Irrigation_AICTE/
-│
-├── app.py                       # Main Streamlit web app
-├── Farm_Irrigation_System.pkl    # Trained ML model
-├── irrigation_data.csv           # Dataset used for model training
-├── irrigation.ipynb              # Model training notebook
-├── requirements.txt              # Python dependencies for deployment
-└── README.md                     # Project documentation
-▶️ How to Run Locally
-Clone the repository:
+## 🛠️ Tech Stack
 
-bash
-Copy
-Edit
+| Category          | Tools/Libs Used                 |
+| ----------------- | ------------------------------- |
+| **Frontend (UI)** | Streamlit                       |
+| **Backend (ML)**  | Scikit-learn, NumPy             |
+| **Model Saving**  | Joblib                          |
+| **Data Handling** | Pandas                          |
+| **Visualization** | Streamlit components & Markdown |
+
+---
+
+## 📂 Project Structure
+
+```
+📁 Smart_Irrigation_AICTE
+ ├── app.py                     # Streamlit web app
+ ├── Farm_Irrigation_System.pkl  # Trained ML model
+ ├── irrigation_data.csv         # Dataset for model training
+ ├── irrigation.ipynb            # Notebook for model building
+ ├── requirements.txt            # Dependencies for deployment
+ └── README.md                   # Project Documentation
+```
+
+---
+
+## 🚀 How to Run Locally
+
+1️⃣ **Clone the Repository**
+
+```bash
 git clone https://github.com/arijit-7612/Smart_Irrigation_AICTE.git
 cd Smart_Irrigation_AICTE
-Install dependencies:
+```
 
-bash
-Copy
-Edit
+2️⃣ **Install Dependencies**
+
+```bash
 pip install -r requirements.txt
-Run the Streamlit app:
+```
 
-bash
-Copy
-Edit
+3️⃣ **Run the Streamlit App**
+
+```bash
 streamlit run app.py
-Open the link shown in the terminal (usually http://localhost:8501).
+```
 
+4️⃣ **Open in Browser**
+
+```
+http://localhost:8501
+```
