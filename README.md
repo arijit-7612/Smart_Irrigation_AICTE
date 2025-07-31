@@ -1,72 +1,60 @@
-# 🌾 Smart Irrigation Prediction Using Machine Learning
+🌾 Smart Irrigation System – Streamlit Web App
+This project is an AI-powered irrigation management system built with Streamlit.
+It predicts the ON/OFF status of 20 smart sprinklers based on real-time scaled sensor inputs (0 to 1), helping farmers optimize water usage efficiently.
 
-This project is a machine learning solution for predicting irrigation needs using environmental sensor data. It leverages a multi-label classification model to automate irrigation decisions, contributing to efficient water usage in agriculture.
+🚀 Features
+🖥️ Interactive Web UI using Streamlit
 
----
+🔢 20 Sensor Inputs via sliders
 
-## 🚀 Features
+💧 Multi-Sprinkler Prediction (ON/OFF for each parcel)
 
-- Predicts multiple irrigation decisions from sensor inputs
-- Data preprocessing and feature scaling
-- Multi-label classification using `RandomForestClassifier`
-- Model evaluation using classification metrics
-- Model serialization with `joblib`
+📊 Machine Learning Model trained with RandomForestClassifier
 
----
+⚡ Instant Prediction without retraining the model
 
-## 📁 Dataset
+🛠️ Tech Stack
+Python 3
 
-- **File**: `irrigation_data.csv`
-- **Features**: 20 sensor columns (`sensor_0` to `sensor_19`)
-- **Labels**: Multiple irrigation-related target variables
+Streamlit
 
----
+NumPy
 
-## 📊 Workflow
+Scikit-learn
 
-1. **Load & Preprocess Data**
-   - Removed unnecessary columns
-   - Normalized sensor values using `MinMaxScaler`
+Joblib
 
-2. **Train-Test Split**
-   - Split data into training and testing sets (using `train_test_split`)
+📦 Project Structure
+bash
+Copy
+Edit
+Smart_Irrigation_AICTE/
+│
+├── app.py                       # Main Streamlit web app
+├── Farm_Irrigation_System.pkl    # Trained ML model
+├── irrigation_data.csv           # Dataset used for model training
+├── irrigation.ipynb              # Model training notebook
+├── requirements.txt              # Python dependencies for deployment
+└── README.md                     # Project documentation
+▶️ How to Run Locally
+Clone the repository:
 
-3. **Model Training**
-   - Trained a `RandomForestClassifier` wrapped in a `MultiOutputClassifier` to handle multiple outputs
+bash
+Copy
+Edit
+git clone https://github.com/arijit-7612/Smart_Irrigation_AICTE.git
+cd Smart_Irrigation_AICTE
+Install dependencies:
 
-4. **Evaluation**
-   - Evaluated the model using `classification_report` from `sklearn`
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the Streamlit app:
 
-5. **Model Saving**
-   - Saved the trained model using `joblib` for future inference
+bash
+Copy
+Edit
+streamlit run app.py
+Open the link shown in the terminal (usually http://localhost:8501).
 
----
-
-## 🛠️ Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Seaborn
-- Matplotlib
-
----
-
-## 📌 How to Run
-
-1. Clone the repository
-2. Upload `irrigation_data.csv` to the root directory
-3. Run the notebook `irrigation.ipynb` in Google Colab or Jupyter
-
----
-
-## 📎 License
-
-This project is open-source and available under the MIT License.
-
----
-
-## 🤝 Contributions
-
-Feel free to open issues or submit pull requests to improve this project!
