@@ -1,4 +1,5 @@
-🌾 Smart Irrigation System – AI-Powered Sprinkler Control
+# 🌾 **SMART IRRIGATION SYSTEM – AI-POWERED SPRINKLER CONTROL**
+
 💧 Save Water. Automate Irrigation. Boost Crop Health. A machine learning-based irrigation system with a Streamlit-powered web app to predict ON/OFF status of 20 sprinklers using real-time sensor data.
 
 ## ✨ Features
@@ -20,10 +21,10 @@ Sensor_1: 0.2  →  Sprinkler 1: OFF
 ### 📸 Screenshots
 
 #### 1️⃣ Web App Homepage
-![Homepage](screen/ss1.png)
+![Homepage](screen/ss1.jpg)
 
 #### 2️⃣ Sprinkler Prediction
-![Prediction](screen/ss2.png)
+![Prediction](screen/ss2.jpg)
 
 ---
 
